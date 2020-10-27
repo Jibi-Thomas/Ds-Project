@@ -78,3 +78,8 @@ footer{
 .allign{
     text-align: left;
 }
+section p{
+    margin-top: 50px;
+    display: inline-block;
+    width: 50%;
+}
