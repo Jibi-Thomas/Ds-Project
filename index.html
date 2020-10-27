@@ -19,25 +19,75 @@
     <section class="space">
         <h1>Bubble Sort</h1>
         <img class="space img" src="./img/buble.gif">
-        <p>Description: </p>
+        <p class="allign">Description: Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.<br>
+            <br>
+            Example:<br>
+            <br>
+            First Pass:<br>
+            ( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.<br>
+            ( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 ), Swap since 5 > 4<br>
+            ( 1 4 5 2 8 ) –>  ( 1 4 2 5 8 ), Swap since 5 > 2<br>
+            ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ), Now, since these elements are already in order (8 > 5), algorithm does not swap them.<br>
+            <br>
+            Second Pass:<br>
+            ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )<br>
+            ( 1 4 2 5 8 ) –> ( 1 2 4 5 8 ), Swap since 4 > 2<br>
+            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+            ( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )<br>
+            Now, the array is already sorted, but our algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.<br>
+            <br>
+            Third Pass:<br>
+            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) </p>
     </section>
     <div class="line"></div>
     <div class="margin" id="Insert"></div>
     <section class="space">
         <h1>Insertion Sort</h1>
         <img class="space img" src="./img/insertion.gif">
-        <p>Description: </p>
-    </section>
+        <p class="allign">Description: Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.<br>
+            <br>
+            Algorithm<br>
+            To sort an array of size n in ascending order:<br>
+            1: Iterate from arr[1] to arr[n] over the array.<br>
+            2: Compare the current element (key) to its predecessor.<br>
+            3: If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.<br>
+            <br>
+            Example:<br>
+            12, 11, 13, 5, 6<br>
+            <br>
+            Let us loop for i = 1 (second element of the array) to 4 (last element of the array)<br>
+            <br>
+            i = 1. Since 11 is smaller than 12, move 12 and insert 11 before 12<br>
+            11, 12, 13, 5, 6<br>
+            <br>
+            i = 2. 13 will remain at its position as all elements in A[0..I-1] are smaller than 13<br>
+            11, 12, 13, 5, 6<br>
+            <br>
+            i = 3. 5 will move to the beginning and all other elements from 11 to 13 will move one position ahead of their current position.<br>
+            5, 11, 12, 13, 6<br>
+            <br>
+            i = 4. 6 will move to position after 5, and elements from 11 to 13 will move one position ahead of their current position.<br>
+            5, 6, 11, 12, 13 </p>
+        </section>
     <div class="line"></div>
     <div class="margin"  id="Select"></div>
     <section class="space">
         <h1>Selection Sort</h1>
         <img class="space img" src="./img/selection.gif">
-        <p>Description: </p>
+        <p class="allign">Description: Selection Sort algorithm is used to arrange a list of elements in a particular order (Ascending or Descending). In selection sort, the first element in the list is selected and it is compared repeatedly with all the remaining elements in the list. If any element is smaller than the selected element (for Ascending order), then both are swapped so that first position is filled with the smallest element in the sorted order. Next, we select the element at a second position in the list and it is compared with all the remaining elements in the list. If any element is smaller than the selected element, then both are swapped. This procedure is repeated until the entire list is sorted.<br>
+            <br>
+            Algorithm:<br>
+            Step 1 - Select the first element of the list (i.e., Element at first position in the list).<br>
+            Step 2: Compare the selected element with all the other elements in the list.<br>
+            Step 3: In every comparision, if any element is found smaller than the selected element (for Ascending order), then both are swapped.<br><br>
+            Step 4: Repeat the same procedure with element in the next position in the list till the entire list is sorted. </p>
     </section>
     <div class="line"></div>
     <footer>
-        <p style="color: white; padding-top: 15px;">Made with ❤️ by Jibi G Daniel</p>
+        <p style="color: white; padding-top: 15px;">Made by JIBI THOMAS |  URK19CS1117</p>
     </footer>
     <script src="./script.js"></script>
 </body>
